@@ -9,12 +9,22 @@ print("Tamaño del dataset:",df.shape)
 print("\nTIPO DE VARIABLE:\nCustumer = continuo\nTotal = continuo\nDiscount = discreto\nWeekDay = ordinal\nHour = discreto\nFood = discreto\nFresh = discreto\nDrinks = discreto\nHome = discreto\nBeauty = discreto\nHealth = discreto\nBaby = discreto\nPets = discreto\n")
 # %%
 # PARTE 3
+print("\n--------Minimo--------")
+print(df.min())
+print("\n--------Maximo--------")
+print(df.max())
 # %%
 # PARTE 4
-print("----------------Medias-----------------")
+# Medidas de tendencia central
+print("\n----------------Medias-----------------")
 print(df.mean())
 print("\n----------------Medianas-----------------")
 print(df.median())
 print("\n----------------Moda-----------------")
 print(df.mode())
-# print(df.describe())
+# De dispersión
+print("\n--------Desviacion Estandar---------")
+print(df.std())
+# Cuartiles
+print("\n---------------------Cuartiles----------------------")
+print(df.quantile([.25, .5, .75]))
